@@ -1,10 +1,10 @@
 [{
-    "first_language": "C++",
+    "first_language": "C",
     "current_language": "Python",
     "name": "Greenmelon"
 },
 {
-    "first_language": "C",
+    "first_language": "C++",
     "current_language": "Golang",
     "name": "Tiramisu"
 },
