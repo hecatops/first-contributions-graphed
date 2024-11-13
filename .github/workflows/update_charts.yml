@@ -32,15 +32,15 @@ jobs:
         run: |
           git add first_language_chart.png
           git add current_language_chart.png
+          git add README.md
 
       - name: Commit generated charts
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Add generated charts"
+          git commit -m "Update README with new image"
 
       - name: Push changes
         run: |
-          git add README.md
-          git commit -m "Update README with new image"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
