@@ -41,4 +41,6 @@ jobs:
 
       - name: Push changes
         run: |
+          git add README.md
+          git commit -m "Update README with new image"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
