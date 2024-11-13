@@ -25,7 +25,6 @@ def create_bar_chart(data, title, filename):
     plt.title(title)
     plt.xlabel("Language")
     plt.ylabel("Count")
-    plt.xticks(rotation=45)
     plt.tight_layout()
     
     print(f"Saving chart: {filename}")
